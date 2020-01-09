@@ -14,13 +14,18 @@
 
 <script>
 var x = document.getElementById("myAudio"); 
-function playAudio() { 
+function playAudio() {
   x.play(); 
 } 
 function pauseAudio() { 
   x.pause(); 
 }
-window.onload = playAudio
+window.onload = function() {
+  var x = document.getElementById("myAudio");
+  console.log(x);
+  x.play();
+}
+
 </script>
 
 </body>
